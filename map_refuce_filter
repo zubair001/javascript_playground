@@ -1,0 +1,33 @@
+const girls= [
+  {name: 'Sabina', size:34, value: '76' },
+  {name: 'Sani', size:36, value: '80' },
+  {name: 'Angelina', size:34, value: '85' },
+  {name: 'Leone', size:36, value: '90' },
+  {name: 'Rose', size:38, value: '95' }
+]
+
+const girlsName= girls.map((girl)=> {
+  return girl.name;
+})
+//console.log(girlsName);
+
+
+
+const girlsSize= girls.filter((girl)=> {
+return girl.size >34
+})
+//console.log(girlsName);
+
+const searchGirl= girls.find((girl)=> 
+{
+  return girl.name === "Sani"
+})
+
+console.log(searchGirl);
+
+//summation
+
+const totalSize= girls.reduce((currentTotal, girl)=> {
+  return girl.size + currentTotal}, 0)
+
+console.log(totalSize); 
